@@ -5,6 +5,9 @@
 
 <img src="https://github.com/MattRo74/udacity-iac-project/blob/master/diagram_ppt/Diagram.jpg">
 
+Link to working test: udagra-WebAp-XMvRKMzP5HGP-854015396.us-east-1.elb.amazonaws.com
+
+
 ## Spin up instructions
 
 Create Network: ./create_network.sh udagraminfra network.yml network-parameters.json
