@@ -1,6 +1,8 @@
 # CD12352 - Infrastructure as Code Project Solution
 # Matthias Rohe
 
+<img src="https://https://github.com/MattRo74/udacity-iac-project/blob/master/diagram_ppt/Diagram.jpg">
+
 ## Spin up instructions
 Configuration of CLI
 First, create an IAM User, e.g. "myAdmin"
