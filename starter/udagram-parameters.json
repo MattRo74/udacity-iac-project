@@ -1,6 +1,10 @@
 [
 	{
-		"ParameterKey": "Add you parameters here",
-		"ParameterValue": "Add you parameters here"
+		"ParameterKey": "EnvironmentName",
+		"ParameterValue": "UdagramProject"
+	},
+	{
+		"ParameterKey": "BucketName",
+		"ParameterValue": "udagramprojet-s3-bucket-mr-20240901"
 	}
-]
+ ]

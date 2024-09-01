@@ -1,0 +1,13 @@
+./create_network.sh udagraminfra network.yml network-parameters.json
+./update_network.sh udagraminfra network.yml network-parameters.json
+./delete_network.sh udagraminfra
+
+./create_server.sh udagramserver udagram.yml udagram-parameters.json
+./update_server.sh udagramserver udagram.yml udagram-parameters.json
+./delete_server.sh udagramserver
+
+./create_s3_bucket.sh udagrambucket s3.yml
+./delete_server.sh udagrambucket
+
+
+aws cloudformation create-stack --stack-name udagraminfra --template-body file://network.yml --parameters file://network-parameters.json --region us-east-1 
