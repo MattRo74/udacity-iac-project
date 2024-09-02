@@ -5,7 +5,7 @@
 
 <img src="https://github.com/MattRo74/udacity-iac-project/blob/master/diagram_ppt/Diagram.jpg">
 
-Link to working test: udagra-WebAp-XMvRKMzP5HGP-854015396.us-east-1.elb.amazonaws.com
+Link to working test: udagra-WebAp-KIQNE9INpnxT-211793406.us-east-1.elb.amazonaws.com
 
 
 ## Spin up instructions

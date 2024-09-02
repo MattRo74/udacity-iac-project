@@ -57,25 +57,24 @@ Resources:
               sudo apt-get install nginx awscli -y
               sudo service nginx start
 
-              # Define the directory where index.html will be placed
+              # Delete Nginx web directory
               WEB_DIR="/var/www/html"
 
               # Copy index.html to the Nginx web directory
-              aws s3 cp s3://${BucketName}/index.html ./index.html
+              # aws s3 cp s3://${BucketName}/index.html ./index.html
 
-              # Create a basic index.html file
-              # cat <<EOF > index.html
-              # <!DOCTYPE html>
-              # <html>
-              # <head>
-              # <title>Udagram Project</title>
-              # </head>
-              # <body>
-              # <h1>it works! Udagram, Udacity</h1>
-              # <p>This worksite is hosted on Nginx</p>
-              # </body>
-              # </html>
-              # EOF
+              cat <<EOF > index.html
+              <!DOCTYPE html>
+              <html>
+              <head>
+              <title>Udagram Project</title>
+              </head>
+              <body>
+              <h1>it works! Udagram, Udacity</h1>
+              <p>This worksite is hosted on Nginx</p>
+              </body>
+              </html>
+              EOF
 
               # Copy index.html to the Nginx web directory
               sudo rm -r $WEB_DIR/index.*
@@ -194,7 +193,7 @@ Resources:
     Type: AWS::S3::Bucket
     Properties:
       BucketName: !Sub "${BucketName}"
-      AccessControl: Private
+      AccessControl: PublicRead
       VersioningConfiguration:
         Status: Enabled
       LifecycleConfiguration:
@@ -210,6 +209,7 @@ Resources:
         IgnorePublicAcls: true
         BlockPublicPolicy: true
         RestrictPublicBuckets: true
+    DeletionPolicy: Retain
 
 Outputs: 
 
